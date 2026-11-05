@@ -19,5 +19,6 @@ El proyecto está organizado de la siguiente manera:
   * `2_modelo_inhomogeneo.R`: definición de funciones para automatizar los procesos de evaluación del grado de asociación espacial del modelo Poisson inhomogéneo y su representación gráfica.
   * `3_gráficos_inhomogeneo.R`: representación gráfica de asociación espacial del modelo inhomogéneo y estimación de la relación entre la asociación espacial con la disimilitud de rasgos del modelo inhomogéneo mediante el test de Mantel entre las matrices de distancia correspondientes junto con su representación gráfica.
   * `4_mantel_homogeneo.R`: test de Mantel para la estimación de la relación entre la asociación espacial con la disimilitud de rasgos del modelo homogéneo entre las matrices de distancia correspondientes junto con su representación gráfica.
-  * `PCAdapt/`: Carpeta donde se guardan los archivos generados por PCAdapt con los resultados de los outliers obtenidos.
-  * `iHS/`: Carpeta donde se guardan los archivos generados por iHS con los resultados obtenidos para el análisis de seleccion positiva.
+
+
+
