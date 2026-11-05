@@ -143,6 +143,6 @@ ggplot(resultados, aes(y=rasgo,x=mantelr)) +
   geom_errorbarh(aes(xmin=llim.2.5., xmax=ulim.97.5. ), height=0)+
   geom_vline(xintercept = 0, lty=2)+
   xlab("Mantel r") + ylab ("Rasgo")+
-  theme_light+
+  theme_light()+
   theme(panel.grid = element_blank()
 )
