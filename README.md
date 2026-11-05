@@ -9,4 +9,4 @@ Para poder ejecutar los scripts de este repositorio de manera local, es necesari
 
 ### Entorno de R
 * **R** (v4.0 o superior)
-* Librerías requeridas: `pcadapt`, `BiocManager`.
+* Librerías requeridas: `spatstat`, `idar`, `ggplot2`, `ecespa`, `ecodist`, `FD`.
