@@ -15,10 +15,9 @@ Para poder ejecutar los scripts de este repositorio de manera local, es necesari
 
 El proyecto está organizado de la siguiente manera:
 * `pipeline/`: Carpeta destinada a almacenar los diferentes scripts para el procesamiento de los datos.
-  * `1_filtrado_variantes_enhancers_ATP2B4.sh`: Descarga de datos, control de calidad con `vcftools` y separación por poblaciones.
-  * `2_pcadapt_variantes_enhancers.R`: Análisis de componentes principales (PCA) y outliers.
-  * `3_analisis_iHS_sierra_leona.sh`: Faseo con Beagle y análisis de selección con `selscan` y `norm` de la población de Sierra Leona.
-* `archivos/`: Carpeta destinada a almacenar los datos de entrada locales (ej. archivos `.bed`, `.samples`).
-  * `filtrado/`: Carpeta donde se guardan los archivos generados en el filtrado de variantes de los enhancers para cada poblacion y uno paea ambas poblaciones.
+  * `1_modelo_homogeneo.R`: evaluación del grado de asociación espacial del modelo Poisson homogéneo y representación gráfica de asociaciones.
+  * `2_modelo_inhomogeneo.R`: definición de funciones para automatizar los procesos de evaluación del grado de asociación espacial del modelo Poisson inhomogéneo y su representación gráfica.
+  * `3_gráficos_inhomogeneo.R`: representación gráfica de asociación espacial del modelo inhomogéneo y estimación de la relación entre la asociación espacial con la disimilitud de rasgos del modelo inhomogéneo mediante el test de Mantel entre las matrices de distancia correspondientes junto con su representación gráfica.
+  * `4_mantel_homogeneo.R`: test de Mantel para la estimación de la relación entre la asociación espacial con la disimilitud de rasgos del modelo homogéneo entre las matrices de distancia correspondientes junto con su representación gráfica.
   * `PCAdapt/`: Carpeta donde se guardan los archivos generados por PCAdapt con los resultados de los outliers obtenidos.
   * `iHS/`: Carpeta donde se guardan los archivos generados por iHS con los resultados obtenidos para el análisis de seleccion positiva.
