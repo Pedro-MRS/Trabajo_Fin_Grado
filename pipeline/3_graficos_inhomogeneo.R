@@ -11,7 +11,7 @@
 load("datos_TFG_PMRS.Rdata")
 
 # Para leer las funciones
-source("modelo_inhomogeneo.R")
+source("2_modelo_inhomogeneo.R")
 
 
 # Se cargan los paquetes ecespa y spatstat
