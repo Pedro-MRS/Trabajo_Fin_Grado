@@ -10,3 +10,15 @@ Para poder ejecutar los scripts de este repositorio de manera local, es necesari
 ### Entorno de R
 * **R** (v4.0 o superior)
 * Librerías requeridas: `spatstat`, `idar`, `ggplot2`, `ecespa`, `ecodist`, `FD`.
+
+## 📂 Estructura del Repositorio
+
+El proyecto está organizado de la siguiente manera:
+* `pipeline/`: Carpeta destinada a almacenar los diferentes scripts para el procesamiento de los datos.
+  * `1_filtrado_variantes_enhancers_ATP2B4.sh`: Descarga de datos, control de calidad con `vcftools` y separación por poblaciones.
+  * `2_pcadapt_variantes_enhancers.R`: Análisis de componentes principales (PCA) y outliers.
+  * `3_analisis_iHS_sierra_leona.sh`: Faseo con Beagle y análisis de selección con `selscan` y `norm` de la población de Sierra Leona.
+* `archivos/`: Carpeta destinada a almacenar los datos de entrada locales (ej. archivos `.bed`, `.samples`).
+  * `filtrado/`: Carpeta donde se guardan los archivos generados en el filtrado de variantes de los enhancers para cada poblacion y uno paea ambas poblaciones.
+  * `PCAdapt/`: Carpeta donde se guardan los archivos generados por PCAdapt con los resultados de los outliers obtenidos.
+  * `iHS/`: Carpeta donde se guardan los archivos generados por iHS con los resultados obtenidos para el análisis de seleccion positiva.
